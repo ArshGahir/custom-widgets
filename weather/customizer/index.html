@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget Customizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude" name="latitude">
+    </div>
+    <div>
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude" name="longitude">
+    </div>
+    <div>
+        <label for="days">Forecast Days (1-7):</label>
+        <input type="number" id="days" name="days" min="1" max="7" value="3">
+    </div>
+    <div>
+        <input type="checkbox" id="show-city" name="show-city" checked>
+        <label for="show-city">Show City Name</label>
+    </div>
+    <div>
+        <input type="checkbox" id="show-temperature" name="show-temperature" checked>
+        <label for="show-temperature">Show Temperature Unit</label>
+    </div>
+    <div>
+        <input type="checkbox" id="show-daily-forecast" name="show-daily-forecast" checked>
+        <label for="show-daily-forecast">Show Daily Forecast</label>
+    </div>
+    <div>
+        <input type="checkbox" id="show-hourly-forecast" name="show-hourly-forecast" checked>
+        <label for="show-hourly-forecast">Show Hourly Forecast</label>
+    </div>
+    <div>
+        <input type="checkbox" id="show-current-weather" name="show-current-weather" checked>
+        <label for="show-current-weather">Show Current Weather</label>
+    </div>
+    <div>
+        <input type="checkbox" id="show-sun-moon" name="show-sun-moon" checked>
+        <label for="show-sun-moon">Show Sun/Moon</label>
+    </div>
+    <div>
+        <label for="color">Choose a color:</label>
+        <input type="color" id="color" name="color" value="#000000">
+    </div>
+    <button id="update-widget">Update Widget</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
